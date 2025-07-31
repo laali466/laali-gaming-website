@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAALI - Official</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Remixicon Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+  <!-- Google Font Pacifico -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  <style>
+    .font-pacifico { font-family: 'Pacifico', cursive; }
+  </style>
+</head>
+<body class="bg-black text-white">
+
+  <!-- ✅ Header -->
+  <header class="bg-black/90 backdrop-blur-sm border-b border-cyan-500/20 sticky top-0 z-50">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <a href="/" class="flex items-center space-x-3">
+          <div class="w-10 h-10 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-lg flex items-center justify-center">
+            <span class="text-white font-bold text-lg">L</span>
+          </div>
+          <div class="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent font-pacifico">
+            LAALI
+          </div>
+        </a>
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="/" class="text-white hover:text-cyan-400 transition-colors whitespace-nowrap">Home</a>
+          <a href="/about" class="text-white hover:text-cyan-400 transition-colors whitespace-nowrap">About Us</a>
+          <a href="/games" class="text-white hover:text-cyan-400 transition-colors whitespace-nowrap">Our Games</a>
+          <a href="/join" class="text-white hover:text-cyan-400 transition-colors whitespace-nowrap">Join Us</a>
+          <a href="/contact" class="text-white hover:text-cyan-400 transition-colors whitespace-nowrap">Contact</a>
+        </nav>
+        <!-- Mobile Menu Button -->
+        <button id="menu-toggle" class="md:hidden text-white hover:text-cyan-400 transition-colors cursor-pointer">
+          <div class="w-6 h-6 flex items-center justify-center">
+            <i id="menu-icon" class="ri-menu-line text-xl"></i>
+          </div>
+        </button>
+      </div>
+      <!-- Mobile Navigation -->
+      <nav id="mobile-menu" class="hidden md:hidden border-t border-cyan-500/20 py-4">
+        <div class="flex flex-col space-y-4">
+          <a href="/" class="text-white hover:text-cyan-400 transition-colors">Home</a>
+          <a href="/about" class="text-white hover:text-cyan-400 transition-colors">About Us</a>
+          <a href="/games" class="text-white hover:text-cyan-400 transition-colors">Our Games</a>
+          <a href="/join" class="text-white hover:text-cyan-400 transition-colors">Join Us</a>
+          <a href="/contact" class="text-white hover:text-cyan-400 transition-colors">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ✅ Hero Section -->
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+      style="background-image: url('https://readdy.ai/api/search-image?query=Futuristic%20gaming%20environment%20with%20neon%20lights%2C%20holographic%20displays%2C%20and%20digital%20technology%20elements%20in%20purple%20and%20cyan%20colors%2C%20modern%20sleek%20design%20with%20glowing%20circuits%20and%20abstract%20geometric%20patterns%2C%20high-tech%20atmosphere%20with%20dark%20background%20highlighting%20bright%20neon%20accents%2C%20professional%20gaming%20studio%20aesthetic%20with%20clean%20minimal%20composition&width=1920&height=1080&seq=hero-bg&orientation=landscape');">
+      <div class="absolute inset-0 bg-black/60"></div>
+    </div>
+    <div class="relative z-10 container mx-auto px-4 text-center">
+      <h1 class="text-5xl md:text-7xl font-bold mb-6">
+        <span class="bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+          Welcome to LAALI Page
+        </span>
+      </h1>
+      <p class="text-xl md:text-2xl text-gray-300 mb-6 leading-relaxed">
+        Pioneering the future of gaming with innovative casual, puzzle, and racing games for Android and PC platforms
+      </p>
+      <p class="text-sm text-cyan-400 mb-8 font-light">
+        This website is created by Amarnath Tiwari
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="/games" class="bg-gradient-to-r from-cyan-500 to-purple-500 px-8 py-4 rounded-full text-white font-semibold hover:scale-105 transition-transform cursor-pointer whitespace-nowrap">Explore Our Games</a>
+        <a href="https://play.google.com/store/apps/developer?id=LAALI+Gaming" class="border-2 border-cyan-400 px-8 py-4 rounded-full text-cyan-400 font-semibold hover:bg-cyan-400 hover:text-black transition-colors cursor-pointer whitespace-nowrap">Download Now</a>
+      </div>
+    </div>
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div class="w-6 h-6 flex items-center justify-center">
+        <i class="ri-arrow-down-line text-cyan-400 text-2xl"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Features Section -->
+  <section class="py-20 bg-gradient-to-b from-black to-gray-900">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">
+          <span class="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+            Why Choose LAALI ?
+          </span>
+        </h2>
+        <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+          We create exceptional gaming experiences that captivate players and push the boundaries of interactive entertainment
+        </p>
+      </div>
+      <!-- features grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Example Feature -->
+        <div class="bg-black/40 backdrop-blur-sm border border-cyan-500/20 rounded-2xl p-8 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105">
+          <div class="w-16 h-16 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full flex items-center justify-center mb-6">
+            <i class="ri-gamepad-line text-white text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-4">Casual Games</h3>
+          <p class="text-gray-400 leading-relaxed">Engaging and accessible games perfect for quick entertainment sessions and relaxation</p>
+        </div>
+        <!-- Baaki features aapke code ke hisaab se add kiye ja sakte hain -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Games Preview Section -->
+<section class="py-20 bg-gray-900">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">
+        <span class="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+          Featured Games
+        </span>
+      </h2>
+      <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+        Discover our latest gaming creations that blend innovation with entertainment
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+
+      <!-- Game 1 -->
+      <div class="bg-black/40 backdrop-blur-sm border border-cyan-500/20 rounded-2xl overflow-hidden hover:border-cyan-500/50 transition-all duration-300 hover:scale-105">
+        <div class="relative h-48 overflow-hidden">
+          <img 
+            src="https://readdy.ai/api/search-image?query=Futuristic%20racing%20car%20with%20neon%20lights%20speeding%20through%20cyberpunk%20city%20streets%2C%20bright%20purple%20and%20cyan%20glowing%20effects%2C%20sleek%20vehicle%20design%20with%20holographic%20elements%2C%20dynamic%20motion%20blur%20and%20particle%20effects%2C%20high-tech%20racing%20environment%20with%20clean%20minimal%20background&width=600&height=400&seq=game1&orientation=landscape" 
+            alt="Neon Racer"
+            class="w-full h-full object-cover object-top"
+          />
+          <div class="absolute top-4 right-4 bg-gradient-to-r from-cyan-500 to-purple-500 px-3 py-1 rounded-full text-white text-sm font-semibold">
+            Racing
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-white mb-2">Neon Racer</h3>
+          <p class="text-gray-400 mb-4">Experience high-speed racing in neon-lit cyberpunk cities</p>
+          <button class="bg-gradient-to-r from-cyan-500 to-purple-500 px-6 py-2 rounded-full text-white font-semibold hover:scale-105 transition-transform cursor-pointer whitespace-nowrap">
+            Play Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Game 2 -->
+      <div class="bg-black/40 backdrop-blur-sm border border-cyan-500/20 rounded-2xl overflow-hidden hover:border-cyan-500/50 transition-all duration-300 hover:scale-105">
+        <div class="relative h-48 overflow-hidden">
+          <img 
+            src="https://static.readdy.ai/image/df4f0e4942efb43214caa2614206b25c/e390edda28001b2ccf254ce4e7200aea.png" 
+            alt="Quantum Puzzle"
+            class="w-full h-full object-cover object-top"
+          />
+          <div class="absolute top-4 right-4 bg-gradient-to-r from-cyan-500 to-purple-500 px-3 py-1 rounded-full text-white text-sm font-semibold">
+            Puzzle
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-white mb-2">Quantum Puzzle</h3>
+          <p class="text-gray-400 mb-4">Mind-bending puzzles that challenge your logic and creativity</p>
+          <button class="bg-gradient-to-r from-cyan-500 to-purple-500 px-6 py-2 rounded-full text-white font-semibold hover:scale-105 transition-transform cursor-pointer whitespace-nowrap">
+            Play Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Game 3 -->
+      <div class="bg-black/40 backdrop-blur-sm border border-cyan-500/20 rounded-2xl overflow-hidden hover:border-cyan-500/50 transition-all duration-300 hover:scale-105">
+        <div class="relative h-48 overflow-hidden">
+          <img 
+            src="https://readdy.ai/api/search-image?query=Colorful%20space-themed%20casual%20game%20with%20cute%20characters%20floating%20among%20stars%20and%20planets%2C%20bright%20neon%20colors%20in%20purple%20and%20cyan%2C%20playful%20design%20with%20glowing%20effects%2C%20friendly%20gaming%20atmosphere%20with%20clean%20minimal%20background%20and%20vibrant%20accents&width=600&height=400&seq=game3&orientation=landscape" 
+            alt="Cosmic Casual"
+            class="w-full h-full object-cover object-top"
+          />
+          <div class="absolute top-4 right-4 bg-gradient-to-r from-cyan-500 to-purple-500 px-3 py-1 rounded-full text-white text-sm font-semibold">
+            Casual
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-white mb-2">Cosmic Casual</h3>
+          <p class="text-gray-400 mb-4">Relaxing space adventure perfect for casual gaming sessions</p>
+          <button class="bg-gradient-to-r from-cyan-500 to-purple-500 px-6 py-2 rounded-full text-white font-semibold hover:scale-105 transition-transform cursor-pointer whitespace-nowrap">
+            Play Now
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center">
+      <a href="/games" class="bg-gradient-to-r from-cyan-500 to-purple-500 px-8 py-4 rounded-full text-white font-semibold hover:scale-105 transition-transform cursor-pointer whitespace-nowrap">
+        View All Games
+      </a>
+    </div>
+  </div>
+</section>
+
+  <!-- ✅ Call To Action -->
+  <section class="py-20 bg-gradient-to-r from-black via-gray-900 to-black">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">
+        <span class="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+          Ready to Join the Gaming Revolution?
+        </span>
+      </h2>
+      <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-12">
+        Become part of our community of gamers, testers, and promoters. Help us shape the future of gaming together.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="/join" class="bg-gradient-to-r from-cyan-500 to-purple-500 px-8 py-4 rounded-full text-white font-semibold hover:scale-105 transition-transform cursor-pointer whitespace-nowrap">Join Our Team</a>
+        <a href="/contact" class="border-2 border-cyan-400 px-8 py-4 rounded-full text-cyan-400 font-semibold hover:bg-cyan-400 hover:text-black transition-colors cursor-pointer whitespace-nowrap">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+<footer class="bg-black border-t border-cyan-500/20">
+  <div class="container mx-auto px-4 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+
+      <!-- Company Info -->
+      <div class="space-y-4">
+        <div class="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent font-pacifico">
+          LAALI
+        </div>
+        <p class="text-gray-400 text-sm">
+          Creating innovative casual, puzzle, and racing games for Android and PC platforms.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="space-y-4">
+        <h3 class="text-white font-semibold text-lg">Quick Links</h3>
+        <div class="flex flex-col space-y-2">
+          <a href="/" class="text-gray-400 hover:text-cyan-400 transition-colors text-sm">Home</a>
+          <a href="/about" class="text-gray-400 hover:text-cyan-400 transition-colors text-sm">About Us</a>
+          <a href="/games" class="text-gray-400 hover:text-cyan-400 transition-colors text-sm">Our Games</a>
+          <a href="/join" class="text-gray-400 hover:text-cyan-400 transition-colors text-sm">Join Us</a>
+        </div>
+      </div>
+
+      <!-- Support -->
+      <div class="space-y-4">
+        <h3 class="text-white font-semibold text-lg">Support</h3>
+        <div class="flex flex-col space-y-2">
+          <a href="tel:+918957308346" class="text-gray-400 hover:text-cyan-400 transition-colors text-sm">Contact Us</a>
+          <a href="/privacy" class="text-gray-400 hover:text-cyan-400 transition-colors text-sm">Privacy Policy</a>
+          <a href="mailto:laalicompany@gmail.com" class="text-gray-400 hover:text-cyan-400 transition-colors text-sm">laalicompany@gmail.com</a>
+        </div>
+      </div>
+
+      <!-- Social & Download -->
+      <div class="space-y-4">
+        <h3 class="text-white font-semibold text-lg">Connect</h3>
+        <div class="flex space-x-4">
+          <a href="#" class="w-10 h-10 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform cursor-pointer">
+            <i class="ri-facebook-fill text-white"></i>
+          </a>
+          <a href="#" class="w-10 h-10 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform cursor-pointer">
+            <i class="ri-twitter-x-fill text-white"></i>
+          </a>
+          <a href="#" class="w-10 h-10 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform cursor-pointer">
+            <i class="ri-instagram-fill text-white"></i>
+          </a>
+          <a href="#" class="w-10 h-10 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform cursor-pointer">
+            <i class="ri-youtube-fill text-white"></i>
+          </a>
+        </div>
+        <a href="https://play.google.com/store/apps/developer?id=LAALI+Gaming" class="inline-flex items-center space-x-2 bg-gradient-to-r from-cyan-500 to-purple-500 px-4 py-2 rounded-full text-white hover:scale-105 transition-transform cursor-pointer whitespace-nowrap">
+          <i class="ri-google-play-fill"></i>
+          <span class="text-sm">Play Store</span>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="border-t border-cyan-500/20 mt-8 pt-8 text-center text-gray-400 text-sm">
+      <p>&copy; 2024 LAALI Gaming. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+  <!-- Mobile menu toggle JS -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const menuIcon = document.getElementById('menu-icon');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      if (mobileMenu.classList.contains('hidden')) {
+        menuIcon.classList.remove('ri-close-line');
+        menuIcon.classList.add('ri-menu-line');
+      } else {
+        menuIcon.classList.remove('ri-menu-line');
+        menuIcon.classList.add('ri-close-line');
+      }
+    });
+  </script>
+</body>
+    </html>
